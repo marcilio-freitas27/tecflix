@@ -1,0 +1,39 @@
+/*Aplicando na tela e quando ela for maior que 700px*/
+/*tela e botao*/
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Reduzir algumas das propriedas para caber na tela*/
+    .botao {
+        margin-top:0.5rem;
+        width: 10rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .filme-principal{
+        height:15rem;
+    }
+
+    .titulo{
+        font-size:1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .descricao{
+        font-size:0.8rem;
+    }
+
+    .filme-principal .descricao{
+        margin-bottom:0.25rem;
+    }
+}
+
+/*descrição mais junto em uma tela com no mínimo 1000px*/
+@media screen and (min-width: 1000px) {
+    .descricao{
+        width: 50%;
+    }
+}

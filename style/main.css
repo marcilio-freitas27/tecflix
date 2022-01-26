@@ -1,0 +1,126 @@
+/* criar variáveis */
+
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*reset css */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    /* utilizando a variável*/
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+    color:#fff;
+}
+
+header .container{
+    /*separar título*/
+    margin-left: 1rem;
+    /* joga todos pra direita*/
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    /*separa cada tag*/
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family:'Arial Black',Times;
+    font-size: 2.25rem;
+}
+
+header .logo:hover{
+    color:#2b0507;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    /*separar itens a*/
+    margin-right: 0.8rem;
+}
+
+header nav a:hover{
+    color:#FFF;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:1rem;
+    /*linear-gradient = deixa a cor mais transparent*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/darknet.jpg");
+    height:400px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.titulo{
+    /*usar porcentagem pensando no mobile fist*/
+    margin-top: 15%;
+    font-size:40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.botao{
+    background-color:rgba(125,0,0,.75);
+    border:none;
+    color:#fff;
+    /*espaço interno do elemento*/
+    padding: 15px 30px;
+    /*espaço entre elementos*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    /*transição entre uma animação e outra*/
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #000
+}
+
+.botao i{
+    margin-right:5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+/*wrapper = envelopar*/
+
+/*owl imagems carousel*/
+
+.box-filme{
+    height:100%;
+    width:100%;
+    display:block;
+}
+
+/*separar margem carousel*/
+
+.carrosel-filmes{
+    margin-top:5px;
+}
