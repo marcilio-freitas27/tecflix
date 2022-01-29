@@ -24,6 +24,7 @@
 
     .descricao{
         font-size:0.8rem;
+        width: 120%;
     }
 
     .filme-principal .descricao{
@@ -34,6 +35,6 @@
 /*descrição mais junto em uma tela com no mínimo 1000px*/
 @media screen and (min-width: 1000px) {
     .descricao{
-        width: 50%;
+        width: 70%;
     }
 }

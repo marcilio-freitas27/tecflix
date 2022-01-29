@@ -8,10 +8,11 @@ for (let i = 0; i < series.length; i++) {
         const getSerie = event.target.parentElement
 
         const altInfo = getSerie.getElementsByClassName('box-filme')
+        const valueInfo = getSerie.getElementsByClassName('sinopse')
         const srcInfo = getSerie.getElementsByClassName('capa-filme')[0].getAttribute('src')
 
         titulo.innerHTML = altInfo[0].alt
-        descricao.innerHTML = altInfo[0].alt
+        descricao.innerHTML = valueInfo[0].innerHTML
         imagem.style.backgroundImage = `linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(${srcInfo})`
     }
 }
