@@ -31,15 +31,25 @@ header .container{
     justify-content: space-between;
 }
 
+/*assista agora*/
+.container .trailer{
+    display: flex;
+    margin-top: 8.5rem;
+    justify-content: center;
+}
+
 header .logo{
     color: var(--vermelho);
     font-family:'Arial Black',Times;
     font-size: 2.25rem;
 }
 
-header .logo:hover{
-    color:#2b0507;
+header .logo a {
+    text-decoration: none;
+    color: var(--vermelho);
 }
+
+
 header nav a{
     text-decoration: none;
     color: #AAA;
@@ -90,6 +100,8 @@ header nav a:hover{
     cursor: pointer;
     /*transição entre uma animação e outra*/
     transition: .3s ease all;
+
+    text-decoration: none;
 }
 
 .botao:hover{
