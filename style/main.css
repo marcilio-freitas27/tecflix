@@ -34,7 +34,7 @@ header .container{
 /*assista agora*/
 .container .trailer{
     display: flex;
-    margin-top: 8.5rem;
+    padding-top: 5rem;
     justify-content: center;
 }
 
@@ -65,7 +65,7 @@ header nav a:hover{
 .filme-principal{
     font-size:1rem;
     /*linear-gradient = deixa a cor mais transparent*/
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/darknet.jpg");
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/tec.webp");
     height:400px;
     background-size: cover;
 
@@ -135,4 +135,16 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top:5px;
+}
+
+.trailers{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/tec.webp");
+    height:100%;
+    background-size:cover;
+}
+
+.rodape{
+    background-color:rgba(125,0,0,.75);
+    border:none;
+    padding:1rem 1rem 1rem;
 }
