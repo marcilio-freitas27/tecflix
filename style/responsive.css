@@ -30,6 +30,7 @@
     .filme-principal .descricao{
         margin-bottom:0.25rem;
     }
+
 }
 
 /*descrição mais junto em uma tela com no mínimo 1000px*/
@@ -38,3 +39,12 @@
         width: 70%;
     }
 }
+
+/*iframe do youtube reduz quando a tela chegar a menos de 1000px*/
+@media screen and (max-width: 1000px){
+    iframe{
+        width: 80%;
+        height: 20rem;
+    }
+}
+    
