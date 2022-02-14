@@ -1,6 +1,10 @@
-<div id="template"></div>
-<script src="../js/owl/jquery.min.js"></script>
-<script type="text/javascript" src="../js/module.js"></script>
+<div id="head"></div>
+<div id="body"></div>
 <div class="trailers"></div>
 <div id="footer"></div>
-<script type="text/javascript" src="../js/footer.js"></script>
+<script src="../js/owl/jquery.min.js"></script>
+<script>
+    $('#head').load( '../module/head.html' );
+    $('#body').load( '../module/body.html' );
+    $('#footer').load( '../module/footer.html' );
+</script>
