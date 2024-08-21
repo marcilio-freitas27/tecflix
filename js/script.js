@@ -11,7 +11,7 @@ for (let i = 0; i < series.length; i++) {
         const descricao = document.body.firstElementChild.nextElementSibling.firstElementChild.firstElementChild.firstElementChild.nextElementSibling
         const getSerie = event.target.parentElement
 
-        // html colactions = semelhante a arrays
+        // html collections = semelhante a arrays
         const altInfo = getSerie.getElementsByClassName('box-filme')
         const valueInfo = getSerie.getElementsByClassName('sinopse')
         const srcInfo = getSerie.getElementsByClassName('capa-filme')[0].getAttribute('src')
@@ -23,8 +23,3 @@ for (let i = 0; i < series.length; i++) {
     }
 }
 
-// ir para outra página do site quando clicar no botão
-const botao = document.querySelector('.botao');
-botao.onclick = () =>{
-    window.location.assign("view/assista.html");
-}
