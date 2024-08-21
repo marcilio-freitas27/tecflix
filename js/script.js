@@ -1,5 +1,6 @@
 const series = document.getElementsByClassName('owl-carousel')
-
+const imagem = document.body.firstElementChild.nextElementSibling.firstElementChild
+imagem.style.backgroundImage = `linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/tec.jpg")`
 /* Cada imagem de série que é tocada irá 
 fazer parte da imagem, título e background da página
 */

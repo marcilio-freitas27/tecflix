@@ -65,7 +65,7 @@ header nav a:hover{
 .filme-principal{
     font-size:1rem;
     /*linear-gradient = deixa a cor mais transparent*/
-    background: url("/img/tec.jpg");
+    /* background: url("/img/tec.jpg"); */
     height:400px;
     background-size: cover;
 
@@ -138,7 +138,7 @@ header nav a:hover{
 }
 
 .trailers{
-    background: url("/img/tec.jpg");
+    /* background: url("/img/tec.jpg"); */
     height:100%;
     background-size:cover;
 }
