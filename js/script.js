@@ -24,3 +24,12 @@ for (let i = 0; i < series.length; i++) {
     }
 }
 
+let btnMenu = document.querySelector('.btn-menu');
+let nav = document.querySelector('.nav-mobile');
+btnMenu.onclick = ()=> {
+    if(nav.style.display != "contents"){
+        nav.style.display = "contents";
+    }else {
+        nav.style.display = "none";
+    }
+}

@@ -3,6 +3,9 @@
 :root{
     --vermelho:#E50914;
     --preta:#141414;
+    --branco:#ffffff;
+    --cinza:#aaaaaa;
+    --vermelho-escuro:#7d0000bf;
 }
 
 /*reset css */
@@ -17,7 +20,7 @@ body{
     /* utilizando a variável*/
     background: var(--preta);
     font-family:'Times New Roman', Times, serif;
-    color:#fff;
+    color:var(--branco);
 }
 
 header .container{
@@ -50,22 +53,61 @@ header .logo a {
 }
 
 
-header nav a{
+header nav a, header div a{
     text-decoration: none;
-    color: #AAA;
+    color:var(--cinza);
     /*separar itens a*/
     margin-right: 0.8rem;
 }
 
-header nav a:hover{
-    color:#FFF;
+header div a{
+    margin: 2px;
+    padding: 2px;
+}
+
+header nav a:hover,header div a:hover{
+    color:var(--branco);
+}
+
+.btn-menu{
+    width: 20% !important;
+    background-color:var(--vermelho-escuro);
+    border:none;
+    color:var(--branco);
+    /*espaço interno do elemento*/
+    padding: 15px 30px;
+    /*espaço entre elementos*/
+    font-size: 12px;
+
+    cursor: pointer;
+    /*transição entre uma animação e outra*/
+    transition: .3s ease all;
+
+    text-decoration: none;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+}
+
+@media (min-width: 700px) {
+    .btn-menu{
+        display: none;
+    }
 }
 
 /*filme principal*/
 .filme-principal{
     font-size:1rem;
-    /*linear-gradient = deixa a cor mais transparent*/
-    /* background: url("/img/tec.jpg"); */
     height:400px;
     background-size: cover;
 
@@ -88,9 +130,9 @@ header nav a:hover{
 }
 
 .botao{
-    background-color:rgba(125,0,0,.75);
+    background-color:var(--vermelho-escuro);
     border:none;
-    color:#fff;
+    color:var(--branco);
     /*espaço interno do elemento*/
     padding: 15px 30px;
     /*espaço entre elementos*/
@@ -104,9 +146,10 @@ header nav a:hover{
     text-decoration: none;
 }
 
-.botao:hover{
-    background-color: #fff;
-    color: #000
+
+.botao:hover, .btn-menu:hover{
+    background-color: var(--branco);;
+    color: var(--preta)
 }
 
 .botao i{
@@ -138,13 +181,12 @@ header nav a:hover{
 }
 
 .trailers{
-    /* background: url("/img/tec.jpg"); */
     height:100%;
     background-size:cover;
 }
 
 .rodape{
-    background-color:rgba(125,0,0,.75);
+    background-color:var(--vermelho-escuro);
     border:none;
     padding:1rem 1rem 1rem;
 }
